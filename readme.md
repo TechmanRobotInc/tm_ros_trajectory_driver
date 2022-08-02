@@ -26,21 +26,21 @@ this package should be used with [TM ROS1 Noetic driver](https://github.com/Tech
 ``./install.sh``<br/>
 
 5. Build all source code<br/>
-``cd ~/tmdriver_ws``
-``catkin_make``
-``source devel/setup.bat``
+``cd ~/tmdriver_ws``<br/>
+``catkin_make``<br/>
+``source devel/setup.bat``<br/>
 
 ## __3. Running it in simulator__
 You can run the TM Trajectory ROS Driver with following command in virtual environment
 1. please launch the tm ros driver moveit, we use TM5-900 for example<br/>
-``roslaunch tm5-900_moveit_config tm5-900_moveit_planning_execution.launch sim:=True``<br/>
+``roslaunch tm5-900-moveit_config tm5-900_moveit_planning_execution.launch sim:=True``<br/>
 2. please run the TM Trajectory ROS Driver<br/>
 ``rosrun tm_moveit_driver tm_moveit_driver``
 
 ## __4. Running it in real robot__
 You can run the TM Trajectory ROS Driver with following command in real robot
 1. please launch the tm ros driver moveit, we use TM5-900 for example<br/>
-``roslaunch tm5-900_moveit_config tm5-900_moveit_planning_execution.launch sim:=False robot_ip:=<your_ip>``<br/>
+``roslaunch tm5-900-moveit_config tm5-900_moveit_planning_execution.launch sim:=False robot_ip:=<your_ip>``<br/>
 2. please run the TM Trajectory ROS Driver<br/>
 ``rosrun tm_moveit_driver tm_moveit_driver``<br/>
 
