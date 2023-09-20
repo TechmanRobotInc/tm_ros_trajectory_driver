@@ -10,7 +10,7 @@
 class TMMoveItRobot : public MoveRobot{
  private:
   private:
-  std::string PLANNING_GROUP = "manipulator";
+  std::string PLANNING_GROUP = "tmr_arm";
   const double eefStep = 0.01;
   const double jumpThreshold = 0.0; 
   std::unique_ptr<moveit::planning_interface::MoveGroupInterface> moveGroup;

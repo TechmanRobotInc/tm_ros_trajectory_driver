@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>tm_trajectory_driver</name>
-  <version>1.1.2</version>
-  <description>Driver for TMFlow</description>
+  <version>1.2.0</version>
+  <description>Trajectory Driver for TMFlow</description>
   <author email="ken.tsai@tm-robot.com">Ken Tsai</author>
   <maintainer email="ken.tsai@tm-robot.com">Ken Tsai</maintainer>
   <maintainer email="leo.wu@tm-robot.com">leowu</maintainer>

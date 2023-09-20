@@ -10,25 +10,13 @@ int main(int argc, char **argv)
   ros::NodeHandle n;
   ros::ServiceClient cartesianMoveClient = n.serviceClient<tm_msgs::CartesianMove>("cartesian_target_move");
   tm_msgs::CartesianMove cartesianMoveSrv;
-  cartesianMoveSrv.request.poseTarget.position.x = 0.5174654328489118;
-  cartesianMoveSrv.request.poseTarget.position.y = -0.12230975732453687;
-  cartesianMoveSrv.request.poseTarget.position.z = 0.461063498777877;
-  cartesianMoveSrv.request.poseTarget.orientation.x = 0.7071235179901123;
-  cartesianMoveSrv.request.poseTarget.orientation.y = 0.7070900201797485;
-  cartesianMoveSrv.request.poseTarget.orientation.z = 0;
-  cartesianMoveSrv.request.poseTarget.orientation.w = 0;
-/*
-position: 
-  x: 0.5174654328489118
-  y: -0.12230975732453687
-  z: 0.461063498777877
-orientation: 
-  x: 0.7071235179901123
-  y: 0.7070900201797485
-  z: 2.1351197574404068e-05
-  w: 2.7723019229597412e-05
-
-*/
+  cartesianMoveSrv.request.poseTarget.position.x = 0.5173971834076588;
+  cartesianMoveSrv.request.poseTarget.position.y = -0.12227435655083664;
+  cartesianMoveSrv.request.poseTarget.position.z = 0.4610696619406722;
+  cartesianMoveSrv.request.poseTarget.orientation.x = 0.7072787284851074;
+  cartesianMoveSrv.request.poseTarget.orientation.y = 0.7069346308708191;
+  cartesianMoveSrv.request.poseTarget.orientation.z = 0.00019281297863926739;
+  cartesianMoveSrv.request.poseTarget.orientation.w = 0.0003879592986777425;
 
   if (cartesianMoveClient.call(cartesianMoveSrv))
   {
